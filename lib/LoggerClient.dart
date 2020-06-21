@@ -25,7 +25,9 @@ class LoggerClientWrapper extends LoggerClient {
 
   Client _client;
 
-  LoggerClientWrapper(this._client);
+  LoggerClientWrapper(this._client) {
+    dataSource = ResponseDataSourceImpl();
+  }
 
   @override
   void close() => _client.close();

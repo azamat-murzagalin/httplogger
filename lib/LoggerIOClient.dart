@@ -5,9 +5,15 @@ import 'package:http/http.dart';
 import 'package:http/io_client.dart';
 import 'package:httplogger/LoggableResponse.dart';
 import 'package:httplogger/LoggerClient.dart';
+import 'package:httplogger/ResponseDataSource.dart';
 
 
 class LoggerIOClient extends IOClient with LoggerClient {
+
+  LoggerIOClient() {
+    dataSource = ResponseDataSourceImpl();
+  }
+
 
   @override
   Future<Response> post(url, {Map<String, String> headers, body, Encoding encoding}) {
