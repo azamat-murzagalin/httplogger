@@ -5,7 +5,6 @@ import 'dart:typed_data';
 
 import 'package:http/http.dart';
 import 'package:httplogger/LoggableResponse.dart';
-import 'package:httplogger/LoggerIOClient.dart';
 import 'package:httplogger/ResponseDataSource.dart';
 
 abstract class LoggerClient implements Client {
@@ -13,7 +12,7 @@ abstract class LoggerClient implements Client {
   ResponseDataSource dataSource;
 
   static Client client() {
-    return LoggerIOClient();
+    return LoggerClientWrapper(Client());
   }
 
   static Client wrap(Client client) {
