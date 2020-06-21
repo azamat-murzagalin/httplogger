@@ -55,6 +55,4 @@ Navigator.push(
 );
 ```
 
-<img src="./readme/sample1.jpg" alt="sample1" width="300" height=""150/>
-
-<img src="https://github.com/azamat-murzagalin/http_ui_logger/blob/master/readme/sample2.jpg" alt="sample2" width="300" height=""150/>
+<img src="./readme/sample1.jpg" alt="sample1" width="250" height="500"/> <img src="./readme/sample2.jpg" alt="sample2" width="250" height="500"/>
