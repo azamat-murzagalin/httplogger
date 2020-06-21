@@ -55,4 +55,7 @@ Navigator.push(
 );
 ```
 
+https://github.com/azamat-murzagalin/http_ui_logger/blob/master/readme/sample1.jpg
+https://github.com/azamat-murzagalin/http_ui_logger/blob/master/readme/sample1.jpg
+
 
