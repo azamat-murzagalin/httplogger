@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  httplogger:
+  http_ui_logger:
     path: ../
   http: ^0.12.1
   shared_preferences: ^0.5.7+3

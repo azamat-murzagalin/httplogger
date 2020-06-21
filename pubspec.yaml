@@ -1,8 +1,8 @@
-name: httplogger
+name: http_ui_logger
 description: Convenient way to store and present `http` client responses.
 version: 0.0.1
 author: Azamat Murzagalin
-homepage: https://github.com/azamat-murzagalin/httplogger
+homepage: https://github.com/azamat-murzagalin/http_ui_logger
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

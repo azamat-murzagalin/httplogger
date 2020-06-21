@@ -1,4 +1,4 @@
-# httplogger
+# http_ui_logger
 
 A new Flutter package project.
 

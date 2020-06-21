@@ -4,8 +4,8 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:http/http.dart';
-import 'package:httplogger/LoggableResponse.dart';
-import 'package:httplogger/ResponseDataSource.dart';
+import 'package:http_ui_logger/LoggableResponse.dart';
+import 'package:http_ui_logger/ResponseDataSource.dart';
 
 abstract class LoggerClient implements Client {
 
