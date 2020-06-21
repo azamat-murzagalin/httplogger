@@ -3,7 +3,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:http_ui_logger/LoggableResponse.dart';
+import 'package:http_ui_logger/src/LoggableResponse.dart';
 
 class ResponseWidget extends StatelessWidget{
 

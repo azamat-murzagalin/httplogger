@@ -1,7 +1,7 @@
 
 import 'dart:convert';
 
-import 'package:http_ui_logger/LoggableResponse.dart';
+import 'package:http_ui_logger/src/LoggableResponse.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 abstract class ResponseDataSource {
