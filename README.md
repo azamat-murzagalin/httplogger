@@ -1,4 +1,4 @@
-http_ui_logger
+# http_ui_logger
 
 This package is a simple http inspector for [dart http](https://github.com/dart-lang/http) clients.
 It intercepts and stores all HTTP responses (including their requests) inside your application,
@@ -19,7 +19,8 @@ import 'package:http_ui_logger/LoggerClient.dart';
 
 final client = LoggerClient.client()
 
-client.get('url')
+//sample request
+client.get('https://www.googleapis.com/books/v1/volumes?q={http}');
 ```
 
   * Wrap your own client:
@@ -31,7 +32,8 @@ import 'package:http_ui_logger/LoggerClient.dart';
 
 final client = LoggerClient.wrap(yourClient)
 
-client.get('url')
+//sample request
+client.get('https://www.googleapis.com/books/v1/volumes?q={http}');
 ```
 
 the client is a simple client from http library wrapped by interceptor.
@@ -47,10 +49,10 @@ import 'package:http_ui_logger/ResponseListWidget.dart';
 
 ...
 
-    Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => ResponseListWidget(client)
-    );
+Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => ResponseListWidget(client)
+);
 ```
 
 
