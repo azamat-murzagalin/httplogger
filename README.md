@@ -1,14 +1,56 @@
-# http_ui_logger
+http_ui_logger
 
-A new Flutter package project.
+This package is a simple http inspector for [dart http](https://github.com/dart-lang/http) clients.
+It intercepts and stores all HTTP responses (including their requests) inside your application,
+and provides a UI for inspecting their content.
 
-## Getting Started
+## Using
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+### Intercept requests
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+You have two options:
+
+  * Create a logger client:
+
+```dart
+import 'package:http_ui_logger/LoggerClient.dart';
+
+...
+
+final client = LoggerClient.client()
+
+client.get('url')
+```
+
+  * Wrap your own client:
+
+```dart
+import 'package:http_ui_logger/LoggerClient.dart';
+
+...
+
+final client = LoggerClient.wrap(yourClient)
+
+client.get('url')
+```
+
+the client is a simple client from http library wrapped by interceptor.
+
+### Visualize
+
+When you want to see requests made, simply push a `ResponseListWidget`
+widget with used client to the screen:
+
+```dart
+import 'package:http_ui_logger/LoggerClient.dart';
+import 'package:http_ui_logger/ResponseListWidget.dart';
+
+...
+
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => ResponseListWidget(client)
+    );
+```
+
+
