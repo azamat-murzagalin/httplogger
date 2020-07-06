@@ -1,8 +1,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:http_ui_logger/src/LoggableResponse.dart';
 import 'package:http_ui_logger/LoggerClient.dart';
+import 'package:http_ui_logger/src/LoggableResponse.dart';
 import 'package:http_ui_logger/src/ResponseWidget.dart';
 
 class ResponseListWidget extends StatefulWidget {

@@ -1,6 +1,6 @@
 name: http_ui_logger
 description: Convenient way to store and present `http` client responses.
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/azamat-murzagalin/http_ui_logger
 
 environment:

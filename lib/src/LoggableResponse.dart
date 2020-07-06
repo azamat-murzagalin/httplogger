@@ -1,4 +1,5 @@
 
+import 'package:http/http.dart';
 
 import 'package:http/http.dart';
 
@@ -56,6 +57,10 @@ class HttpLoggableResponse implements LoggableResponse {
   }
 
 
+  @override
+  LoggableResponse fromJson() {
+
+  }
 
   @override
   String shortDescription() {
