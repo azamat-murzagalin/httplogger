@@ -4,6 +4,33 @@ This package is a simple http inspector for [dart http](https://github.com/dart-
 It intercepts and stores all HTTP responses (including their requests) inside your application,
 and provides a UI for inspecting their content.
 
+## Installing
+
+1. Depend on it
+Add this to your package's pubspec.yaml file:
+
+```
+dependencies:
+  http_ui_logger: ^0.0.3
+```
+
+2. Install it
+You can install packages from the command line:
+
+```
+$ flutter pub get
+```
+
+Alternatively, your editor might support flutter pub get. Check the docs for your editor to learn more.
+
+3. Import it
+Now in your Dart code, you can use:
+
+```
+import 'package:http_ui_logger/LoggerClient.dart';
+import 'package:http_ui_logger/ResponseListWidget.dart';
+```
+
 ## Using
 
 ### Intercept requests
